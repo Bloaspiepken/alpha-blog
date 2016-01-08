@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome to AlphaBlog</title>
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <h1>This is the homepage of AlphaBlog!</h1>
+  <div>
+    <h2 align=center>If you want to tell something, just go ahead</h2>
+    <h4>To let you more about us, go to the about page</h4>
+    <p><%= link_to 'About', about_path %></p>
+  </div>
+
+
+<%= yield %>
+
+</body>
+</html>

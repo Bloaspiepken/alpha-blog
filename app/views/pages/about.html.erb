@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome to the about us page</title>
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <h1>Ruby on Rails assignment of AlphaBlog!</h1>
+  <div>
+    <h2 align=center>If you want to tell something, just go ahead</h2>
+    <h4>To go back to the home page</h4>
+    <p><%= link_to 'Home', root_path %></p>
+
+  </div>
+
+
+<%= yield %>
+
+</body>
+</html>
